@@ -1,11 +1,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
     </head>
     <body>
 
         <header class="transmission-log">
-            <p class="log-label">TRANMISSION LOG</p>
+            <p class="log-label">TRANSMISSION LOG</p>
         </header>
 
         <section class="hero">
@@ -16,17 +17,22 @@
 
         <section class="archive">
             <div class="archive-header">
-                <p class="archive-number">TRANMISSION <span class="orange">00</span> - THE GOLDEN RECORD, REISSUED</p>
+                <p class="archive-number">TRANSMISSION <span class="orange">00</span> - THE GOLDEN RECORD, REISSUED</p>
             </div>
 
             <div class="archive-content">
-                <h2 class="archive-title">FROM OUTWARD<br>TO <span class="orange">INWARD</span></h2>
+                <h2 class="descending-title">
+                    <span class="word-from">FROM</span>
+                     <span class="word-outward">OUTWARD</span>
+                     <span class="word-to">TO</span>
+                     <span class="word-inward">INWARD</span>
+                </h2>
 
-                <p class="archive-body">In 1977, NASA launched Voyager 1 and 2, each carrying a golden phonograph record. Curated by Carl Sagan and Ann Druyan, the record contained 55 greetings in 55 languages , sounds of Earth, and 116 images. It was a tranmission sent <em>outward</em> - a message to whatever intelligence might find it.</p>
+                <p class="archive-body">In 1977, NASA launched Voyager 1 and 2, each carrying a golden phonograph record. Curated by Carl Sagan and Ann Druyan, the record contained 55 greetings in 55 languages , sounds of Earth, and 116 images. It was a transmission sent <em>outward</em> - a message to whatever intelligence might find it.</p>
 
-                <p class="archive-body">Forty-nine years later, the question has reversed. We are no longer asking what we should send to the stars. We are asking what is vanishing here, on Earth, that we should reocrd before it disappears.</p>
+                <p class="archive-body">Forty-nine years later, the question has reversed. We are no longer asking what we should send to the stars. We are asking what is vanishing here, on Earth, that we should record before it disappears.</p>
 
-                <p class="archive-body">A language dies every two weeks. Of  the roughly 7,000 languages spoken today, nearly half may be gond by the end of this century. With each one, an entire  way of seeing the world goes silent.</p>
+                <p class="archive-body">A language dies every two weeks. Of  the roughly 7,000 languages spoken today, nearly half may be gone by the end of this century. With each one, an entire  way of seeing the world goes silent.</p>
 
                 <p class="archive-body"><span class="orange">This is the Earth Signal Archive. A record of five disappearing voices. Transmitted from Earth, May 2026.</span></p>
 
@@ -40,7 +46,38 @@
             </div>
         </section>
 
+          <section class="archive comparison">
+            <div class="archive-header">
+                <p class="archive-number">REFERENCE <span class="orange">—</span> TWO TRANSMISSIONS</p>
+            </div>
+
+            <div class="compare-grid">
+                <div class="compare-col">
+                    <p class="compare-year">1977</p>
+                    <p class="compare-item">55 spoken greetings</p>
+                    <p class="compare-item">115 images</p>
+                    <p class="compare-item">27 musical pieces</p>
+                    <p class="compare-item">Sounds of Earth</p>
+                    <p class="compare-label">SENT <span class="orange">OUTWARD</span><br>to the stars</p>
+                </div>
+
+                <div class="compare-col">
+                    <p class="compare-year">2026</p>
+                    <p class="compare-item">5 disappearing languages</p>
+                    <p class="compare-item">0-40 speakers each</p>
+                    <p class="compare-item">Last recordings</p>
+                    <p class="compare-item">Voices of Earth</p>
+                    <p class="compare-label">KEPT <span class="orange">INWARD</span><br>before they vanish</p>
+                </div>
+            </div>
+        </section>
+
          <section class="archive">
+
+            <div class="archive-header">
+                <p class="archive-number">ARCHIVE ENTRY <span class="orange">001</span> — AINU</p>
+            </div>
+            <div class="archive-ainu">Ainu</div>
             <div class="archive-header">
                 <p class="archive-number">ARCHIVE ENTRY <span class="orange">001</span> — AINU</p>
             </div>
@@ -171,3 +208,65 @@
                 </div>
             </div>
         </section>
+
+        <section class="archive outro">
+            <div class="archive-header">
+                <p class="archive-number">TRANSMISSION <span class="orange">END</span></p>
+            </div>
+
+            <div class="archive-content">
+                <h2 class="outro-title"><span class="we-were">WE WERE</span><br><span class="here orange">HERE.</span></h2>
+
+                <p class="archive-body">This record carries five voices that may not survive the coming decade. In 1977, we sent the sounds of Earth outward, to whatever might be listening. In 2026, we turn the same gesture inward — recording what is vanishing here, before it is gone.</p>
+
+                <p class="archive-body">A language is not only words. It is a way of seeing the ocean, of naming the cold, of remembering the dead. When the last speaker falls silent, an entire world goes with them.</p>
+
+                <p class="archive-quote outro-quote">By the time you receive this,<br>the words may already be <span class="orange fade-word">gone.</span></p>
+
+                <div class="metadata">
+                    <p>TRANSMISSION: COMPLETE</p>
+                    <p>ENTRIES: 5</p>
+                    <p>ORIGIN: EARTH</p>
+                    <p>TRANSMITTED: 2026.05.29</p>
+                    <p>SENT BY: KHANH LINH LUONG</p>
+                    <p>STATUS: <span class="orange">AWAITING RECEIPT</span></p>
+                </div>
+            </div>
+        </section>
+
+         <script>
+        const title = document.querySelector('.descending-title');
+        const words = title.querySelectorAll('span');
+
+        function runAnimation() {
+            words.forEach(w => w.classList.remove('show'));
+            words.forEach((w, i) => {
+                setTimeout(() => w.classList.add('show'), i * 350);
+            });
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    runAnimation();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(title);
+
+        const fadeWord = document.querySelector('.fade-word');
+    
+    const fadeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = 'running';
+            }
+        });
+    }, { threshold: 0.8 });
+    
+    if (fadeWord) {
+        fadeObserver.observe(fadeWord);
+    }
+
+    </script>

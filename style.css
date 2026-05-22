@@ -1,13 +1,17 @@
 body {
     background-color: #000000;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+.orange {
+    color: #ff6b1a;
+}
+
 .transmission-log {
-    padding: 30px 40px;
+    padding: 30px 60px;
     border-bottom: 1px solid #ffffff;
 }
 
@@ -18,106 +22,35 @@ body {
 }
 
 .hero {
-    padding: 80px 40px;
-    min-height: 80vh;
+    padding: 100px 60px;
+    min-height: 85vh;
 }
 
-.hero h1{
-    font-size: 90px;
+.hero h1 {
+    font-size: 110px;
     font-weight: bold;
-    line-height: 1;
-    margin: 0 0 30px 0;
-    letter-spacing: 1px;
-}
-
-.orange {
-    color: #ff6b1a;
+    line-height: 0.95;
+    margin: 0 0 40px 0;
+    letter-spacing: -1px;
 }
 
 .subtitle {
-    font-size: 14px;
-    letter-spacing: 4px;
-    margin-bottom: 100px;
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin-bottom: 120px;
 }
 
-.quote{
+.quote {
     color: #ff6b1a;
-    font-size: 18px;
+    font-size: 22px;
     font-style: italic;
     text-align: right;
     line-height: 1.6;
 }
 
 .archive {
-    padding: 60px 40px;
-    border-top: 1px solid #ffffff;
-    min-height: 80vh;
-}
-
-.archive-header {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ffffff;
-    margin-bottom: 60px;
-}
-
-.archive-number {
-    font-size: 12px;
-    letter-spacing: 3px;
-    margin: 0;
-}
-
-.archive-title {
-    font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin: 0 0 30px 0;
-}
-
-.archive-tagline {
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 80px;
-}
-
-.metadata {
-    font-size: 14px;
-    letter-spacing: 2px;
-    line-height: 2;
-}
-
-.metadata p {
-    color: #ffffff;
-    margin: 0;
-}
-
-.archive-body {
-    font-size: 16px;
-    line-height: 1.8;
-    margin: 0 0 20px 0;
-    max-width: 700px;
-    color: #ffffff;
-}
-
-.archive-body em {
-    font-style: italic;
-    color: #ff6b1a;
-}
-
-.archive-quote {
-    font-size: 22px;
-    font-style: italic;
-    line-height: 1.6;
-    margin: 40px 0;
-    padding: 30px 0;
-    border-top: 1px solid #444;
-    border-bottom: 1px solid #444;
-    max-width: 700px;
-}
-
-.archive {
-    padding: 100px 60px;
+    padding: 120px 60px;
     border-top: 1px solid #222;
-    min-height: 80vh;
 }
 
 .archive-header {
@@ -127,85 +60,218 @@ body {
 }
 
 .archive-number {
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    opacity: 0.9;
     margin: 0;
 }
 
 .archive-title {
-    font-size: 80px;
+    font-size: 150px;
     font-weight: bold;
-    line-height: 1;
-    letter-spacing: -1px;
-    margin: 0 0 60px 0;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    margin: 0 0 20px 0;
+    color: #ffffff;
 }
 
 .archive-title .orange {
     display: block;
-    font-size: 44px;
+    font-size: 48px;
     margin-top: 20px;
     letter-spacing: 4px;
-    font-weight: normal;
-    opacity: 0.9;
+    font-weight: 600;
+    color: #ff6b1a;
 }
 
 .archive-body {
-    font-size: 16px;
-    line-height: 1.8;
-    margin: 0 0 24px 0;
-    max-width: 680px;
+    font-size: 30px;
+    line-height: 1.45;
+    margin: 0 0 40px 0;
+    max-width: 1000px;
     color: #ffffff;
 }
 
 .archive-body em {
     font-style: italic;
     color: #ff6b1a;
-    font-weight: 500;
 }
 
 .archive-quote {
-    font-size: 24px;
+    font-size: 40px;
     font-style: italic;
-    line-height: 1.5;
-    margin: 50px 0;
-    padding: 35px 0;
+    line-height: 1.4;
+    margin: 60px 0;
+    padding: 45px 0;
     border-top: 1px solid #444;
     border-bottom: 1px solid #444;
-    max-width: 680px;
+    max-width: 1000px;
     color: #ffffff;
 }
 
 .archive-quote em {
-    display: block;
-    font-size: 36px;
-    font-weight: bold;
     font-style: italic;
     color: #ffffff;
-    margin-bottom: 12px;
-    letter-spacing: 1px;
 }
 
 .metadata {
-    margin-top: 70px;
-    padding: 30px 35px;
+    margin-top: 80px;
+    padding: 35px 40px;
     border: 1px solid #333;
     background-color: #0a0a0a;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 1px;
     line-height: 2;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .metadata p {
     color: #ffffff;
     margin: 0;
-    padding: 10px 0;
+    padding: 12px 0;
     border-bottom: 1px dashed #222;
 }
 
 .metadata p:last-child {
     border-bottom: none;
+}
+
+.inward {
+    display: block;
+    font-size: 200px;
+    color: #ff6b1a;
+    line-height: 0.9;
+    margin-top: 20px;
+}
+
+.descending-title {
+    margin: 0 0 40px 0;
+    font-weight: bold;
+    line-height: 1;
+    font-family: 'Space Grotesk', Arial, sans-serif;
+}
+
+.descending-title span {
+    display: block;
+}
+
+.word-from {
+    font-size: 7vw;
+    margin-left: 0;
+}
+
+.word-outward {
+    font-size: 9vw;
+    margin-left: 8vw;
+}
+
+.word-to {
+    font-size: 5vw;       
+    margin-left: 20vw;
+}
+
+.word-inward {
+    font-size: 12vw;
+    margin-left: 30vw;
+    color: #ff6b1a;
+}
+
+.compare-grid {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.compare-col {
+    flex: 1;
+    min-width: 280px;
+    padding: 40px;
+    border: 1px solid #333;
+    background-color: #0a0a0a;
+}
+
+.compare-year {
+    font-size: 72px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+    color: #ffffff;
+}
+
+.compare-item {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 12px 0;
+    border-bottom: 1px dashed #222;
+    color: #ffffff;
+}
+
+.compare-label {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+.outro {
+    min-height: 100vh;
+}
+
+.outro-title {
+    margin: 0 0 60px 0;
+    font-weight: bold;
+    line-height: 0.95;
+}
+
+.we-were {
+    font-size: 100px;
+}
+
+.here {
+    font-size: 130px;
+}
+
+.word-from,
+.word-outward,
+.word-to,
+.word-inward {
+    opacity: 0;
+    transition: opacity 1s ease, transform 1.2s ease;
+}
+
+.word-from    { transform: translateX(-60px); }
+.word-outward { transform: translateX(-120px); }
+.word-to      { transform: translateX(80px); }
+.word-inward  { transform: translateX(160px); }
+
+.word-from.show,
+.word-outward.show,
+.word-to.show,
+.word-inward.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.outro-quote {
+    font-family: 'Space Grotesk', Arial, sans-serif;
+}
+
+.fade-word {
+    display: inline-block;
+    animation: fadeAway 4s ease-in-out forwards;
+    animation-delay: 2s;
+    animation-play-state: paused;
+}
+
+@keyframes fadeAway {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.archive-ainu {
+    font-size:45vw;
+    color:#ff6b1a;
 }
