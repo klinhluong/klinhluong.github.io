@@ -32,6 +32,7 @@ body {
     line-height: 0.95;
     margin: 0 0 40px 0;
     letter-spacing: -1px;
+    font-family: 'Space Grotesk', Arial, sans-serif;
 }
 
 .subtitle {
@@ -42,10 +43,11 @@ body {
 
 .quote {
     color: #ff6b1a;
-    font-size: 22px;
+    font-size: 40px;
     font-style: italic;
-    text-align: right;
+    text-align: left;
     line-height: 1.6;
+    font-family: 'Space Grotesk', Arial, sans-serif;
 }
 
 .archive {
@@ -274,4 +276,32 @@ body {
 .archive-ainu {
     font-size:45vw;
     color:#ff6b1a;
+}
+
+.big-name {
+    font-size: 19vw;
+    font-weight: bold;
+    line-height: 0.9;
+    letter-spacing: -3px;
+    margin: 0 0 30px 0;
+}
+
+.lang-ainu {
+    color: #888888;
+}
+
+.lang-arem {
+    color: #ffffff;
+}
+
+.lang-taushiro {
+    color: #ff6b1a; 
+}
+
+.lang-tanema {
+    color: #ff6b1a;
+}
+
+.lang-yagan {
+    color: #444444;
 }
